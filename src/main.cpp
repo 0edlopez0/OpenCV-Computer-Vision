@@ -35,37 +35,6 @@ Mat maskImg(Mat srcImageIn, Size size){
 
 
 int main(){
-	//Mat image = imread("./src/IMG_3105.JPG");
-	//Mat image2;
-	//Mat glasses = imread("./src/sunglass.jpg");
-	/*if(!image.data){
-		cout<<"no read"<<endl;
-		return -1;
-	}
-
-
-	namedWindow("image",WINDOW_AUTOSIZE);
-	cvtColor(image,image2,COLOR_BGR2GRAY);
-
-	Size size(373,70); //This is just the size I want the glasses to be (same as region of interest)
-
-	resize(glasses,glasses,size); //I am resizing the glasses to the dimensions of "size" which I declared
-	//in the last line
-
-	Rect roi(1120,840,373,70);//Making my region of interest as a rectangle
-	//(top corner x coordinate, top corner y coordinate, width, height)
-
-	Mat img_roi = image(roi);//Making my area of interest on the specific picture I want it to be in
-
-	glasses.copyTo(img_roi);//putting my glasses picture into the area of interest in the picture I want it
-	//to be in
-
-	imshow("image",image);
-	waitKey();
-
-	cout<<"Run"<<endl;
-	cout<<image.size<<endl;
-	*/
 	Mat frame;
 	Mat frame2;
 	String face_cascade_name = "./src/haarcascade_frontalface_default.xml";
